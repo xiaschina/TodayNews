@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.xias.demo.todaynews.MainActivity">
+    android:layout_height="match_parent">
 
     <RadioGroup
+        android:id="@+id/main_rg"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_bottom_navigation"
         android:orientation="horizontal">
 
-        <android.support.v7.widget.AppCompatRadioButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@null"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:drawableTop=""
-            android:text="@string/tv_main_name_index"/>
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/style_main_navigation"
+            android:drawableTop="@drawable/ic_main_index"
+            android:text="@string/tv_main_name_index" />
 
-        <android.support.v7.widget.AppCompatRadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:layout_gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_watermelon_video"
+            style="@style/style_main_navigation"
+            android:drawableTop="@drawable/ic_main_watermelon_video"
+            android:text="@string/tv_main_name_watermelon_video" />
 
-        <android.support.v7.widget.AppCompatRadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:layout_gravity="center"/>
-
-        <android.support.v7.widget.AppCompatRadioButton
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:button="@null"
-            android:layout_gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_header"
+            style="@style/style_main_navigation"
+            android:drawableTop="@drawable/ic_main_header"
+            android:text="@string/tv_main_name_header" />
     </RadioGroup>
 
-</android.support.design.widget.CoordinatorLayout>
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_rg"></FrameLayout>
+
+</RelativeLayout>

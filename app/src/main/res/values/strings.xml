@@ -1,7 +1,13 @@
 <resources>
+    <string name="channel_normal">推荐;热点;本地;视频;头条号;社会;问答;娱乐;科技;汽车;体育;财经;军事;国际;段子;趣图;美女;健康;正能量;时尚</string>
+    <string name="channel_">电影;数码;辟谣;奇葩;游戏;手机;旅游;宠物;情感</string>
     <string name="app_name">TodayNews</string>
     <string name="tv_main_name_index">首页</string>
     <string name="tv_main_name_watermelon_video">西瓜视频</string>
     <string name="tv_main_name_header">微头条</string>
     <string name="tv_main_name_small_video">小视频</string>
+    <string name="fragment_index_tv_hint">搜你想搜的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
