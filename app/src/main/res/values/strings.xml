@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TodayNews</string>
+    <string name="tv_main_name_index">首页</string>
+    <string name="tv_main_name_watermelon_video">西瓜视频</string>
+    <string name="tv_main_name_header">微头条</string>
+    <string name="tv_main_name_small_video">小视频</string>
+</resources>
